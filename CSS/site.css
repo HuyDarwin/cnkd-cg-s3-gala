@@ -1,0 +1,106 @@
+@font-face {
+	font-family: "UTM Thanh Nhac TL";
+	src:
+		url("../Fonts/00180-UTM-THANH-NHAC-TL.TTF") format("woff"),
+		url("../Fonts/00180-UTM-THANH-NHAC-TL.TTF") format("opentype"),
+		url("../Fonts/00180-UTM-THANH-NHAC-TL.TTF") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Chesterfield";
+	src:
+		url("../Fonts/CHESTERFIELDREGULAR.TTF") format("woff"),
+		url("../Fonts/CHESTERFIELDREGULAR.TTF") format("opentype"),
+		url("../Fonts/CHESTERFIELDREGULAR.TTF") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "FZ Lufga";
+	src:
+		url("../Fonts/FZ LUFGA REGULAR.TTF") format("woff"),
+		url("../Fonts/FZ LUFGA REGULAR.TTF") format("opentype"),
+		url("../Fonts/FZ LUFGA REGULAR.TTF") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Neue Helvetica Condensed 87 Heavy";
+	src:
+		url("../Fonts/neue-helvetica-condensed-87-heavy-viet-hoa-huydarwin.ttf") format("woff"),
+		url("../Fonts/neue-helvetica-condensed-87-heavy-viet-hoa-huydarwin.ttf") format("opentype"),
+		url("../Fonts/neue-helvetica-condensed-87-heavy-viet-hoa-huydarwin.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "SFU Futura Book";
+	src:
+		url("../Fonts/SFUFUTURABOOK.TTF") format("woff"),
+		url("../Fonts/SFUFUTURABOOK.TTF") format("opentype"),
+		url("../Fonts/SFUFUTURABOOK.TTF") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "SVN Helves Bold";
+	src:
+		url("../Fonts/SVN-HELVES BOLD.TTF") format("woff"),
+		url("../Fonts/SVN-HELVES BOLD.TTF") format("opentype"),
+		url("../Fonts/SVN-HELVES BOLD.TTF") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "UTM Thanh Nhac CNKD";
+	src:
+		url("../Fonts/UTM-THANH-NHAC-CNKD.TTF") format("woff"),
+		url("../Fonts/UTM-THANH-NHAC-CNKD.TTF") format("opentype"),
+		url("../Fonts/UTM-THANH-NHAC-CNKD.TTF") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+body {
+	overflow: hidden;
+}
+
+div, img, button, textarea, iframe, select, option, input, label, video {
+	position:absolute;
+	margin:auto;
+}
+
+video {
+	position:absolute;
+	margin:auto;
+	top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    height:100%;
+    width:100%;
+}
+
+p {
+	margin:auto;
+	position:absolute;
+}
+
+table {
+	margin:auto;
+	position:absolute;
+}

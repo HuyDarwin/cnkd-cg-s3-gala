@@ -1,0 +1,99 @@
+<html>
+<head>
+    <title>Puzzleboard</title>
+	
+	<script type="text/javascript" src="JS/jquery-3.3.1.min.js"></script>
+	<script type="module" src="JS/firebase.js"></script>
+	<script type='module' src='JS/functions.js'></script>
+	<script type="module" src="JS/puzzleboard_fb.js"></script>
+	<script type="module" src="JS/soundboard_fb.js"></script>
+	
+    <link rel="stylesheet" type="text/css" href="CSS/reset.css">
+	<link rel="stylesheet" type="text/css" href="CSS/site.css">
+	<link rel="stylesheet" type="text/css" href="CSS/site_puzzleboard.css">
+
+  <meta http-equiv='cache-control' content='no-cache'> 
+	<meta http-equiv='expires' content='0'> 
+	<meta http-equiv='pragma' content='no-cache'>
+	
+    <meta charset="utf-8" />
+</head>
+<body>
+<!--
+<body onkeydown="if(!event.target.matches('input')&&!event.target.matches('textarea')&&event.keyCode != 122 && event.keyCode != 116 && event.keyCode != 17)return!1" oncontextmenu="return!1" onselectstart="return!1" ondragstart="return!1">
+!-->
+	<div class='puzzleboard_holder'>
+	  <div class='puzzleboard_backdrop'>
+      <div id='puzzle_back_main'></div>
+      <div id='puzzle_back_bonus'></div>
+      <video id='puzzle_back_end_bonus' src="Assets/utomp3.com - het vong đac biet_1080p (1).mp4" autoplay loop></video>
+      <video id='puzzle_reveal' src="Assets/utomp3.com - hien o chu_1080p.mp4"></video>
+      <video id="puzzle_bonus_reveal" src="Assets/utomp3.com - hien o chu vong đac biet_1080p.mp4"></video>
+      <video id='puzzle_tossup' src="Assets/utomp3.com - o chu toss up_1080p.mp4"></video>
+      <video id='puzzle_solve_main' src="Assets/utomp3.com - giai o chu vong chinh_1080p.mp4"></video>
+      <video id='puzzle_solve_tossup' src="Assets/utomp3.com - giai o chu toss up_1080p.mp4"></video>
+
+      <video id='puzzle_bonus_moving' src="Assets/EP30 ONLY/Chạy Ô chữ Vòng đặc biệt.mp4" autoplay loop></video>
+
+      <div id='puzzle_bonus_buzzer'></div>
+      <div id='puzzle_bonus_correct'></div>
+
+      <div id="puzzle_frame_main"></div>
+      <div id="puzzle_frame_bonus"></div>
+    </div>
+		<table class='puzzleboard'>
+      
+		</table>
+		<table class='puzzleboard_empty'>
+      
+		</table>
+
+    <p class="temporary">A</p>
+	</div>
+  <!--
+  <div class='camera_source'>
+			<video id="videoElement" style="position: fixed;" autoplay muted />
+  </div>
+	!-->
+	<div class='backdrop'>
+      <iframe allow="fullscreen;autoplay" allowfullscreen height="100%" src="https://streamable.com/e/h66bza?autoplay=1&muted=1&nocontrols=1" width="100%" style="border:none; width:100%; height:100%; position:absolute; left:0px; top:0px; overflow:hidden;"></iframe>
+      
+      <img src="Assets/logo%20nơn%20tk.png" style="top:9vw;left:5vw;width:90vw;" />  
+  </div>
+  <!--
+  <script>
+    var video = document.querySelector("#videoElement");
+
+    if (navigator.mediaDevices.getUserMedia) {
+      navigator.mediaDevices.getUserMedia({ video: true })
+        .then(function (stream) {
+          video.srcObject = stream;
+        })
+        .catch(function (err0r) {
+          console.log("Something went wrong!");
+        });
+    }
+  </script>
+  !-->
+  
+  <script>    
+    document.onkeydown = function(e) {
+        if(e.keyCode == 123) {
+         return false;
+        }
+        if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)){
+         return false;
+        }
+        if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)){
+         return false;
+        }
+        if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)){
+         return false;
+        }
+
+        if(e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)){
+         return false;
+        }      
+     }
+	</script>
+</body>

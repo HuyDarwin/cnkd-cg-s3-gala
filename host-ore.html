@@ -1,0 +1,112 @@
+<html>
+<head>
+    <title>Host</title>
+	
+	<script type="text/javascript" src="JS/jquery-3.3.1.min.js"></script>
+	<script type="module" src="JS/firebase.js"></script>
+	<script type='module' src='JS/functions.js'></script>
+	<script type="module" src="JS/host_fb.js"></script>
+	
+    <link rel="stylesheet" type="text/css" href="CSS/reset.css">
+	<link rel="stylesheet" type="text/css" href="CSS/site.css">
+	<link rel="stylesheet" type="text/css" href="CSS/site_host.css">
+	
+	<meta http-equiv='cache-control' content='no-cache'> 
+	<meta http-equiv='expires' content='0'> 
+	<meta http-equiv='pragma' content='no-cache'>
+
+    <meta charset="utf-8" />
+</head>
+<body onkeydown="if(!event.target.matches('input')&&!event.target.matches('textarea')&&event.keyCode != 122 && event.keyCode != 116 && event.keyCode != 17)return!1" oncontextmenu="return!1" onselectstart="return!1" ondragstart="return!1">
+	<img class='background' src='Assets/ed725204-7929-458e-848a-34ad98480fd0.jpg' />
+	
+	<button class='prev_wheel'>NÓN</button>
+	<button class='prev_puzzle'>Ô CHỮ</button>
+	<iframe class='preview' id='pre_wheel' src='wheel_lite.html' frameborder='0'></iframe>
+	<iframe class='preview' id='pre_puzzleboard' src='puzzleboard_lite.html' frameborder='0'></iframe>
+	
+	<table class='contestants_score'>
+		<tr>
+			<th id='cs_th_name'>TÊN</th>
+			<th id='cs_th_round'>VÒNG</th>
+			<th id='cs_th_total'>TỔNG</th>
+		</tr>
+		<tr id='cs_c1'>
+			<td id='cs_td_name'></td>
+			<td id='cs_td_round'></td>
+			<td id='cs_td_total'></td>
+		</tr>
+		<tr id='cs_c2'>
+			<td id='cs_td_name'></td>
+			<td id='cs_td_round'></td>
+			<td id='cs_td_total'></td>
+		</tr>
+		<tr id='cs_c3'>
+			<td id='cs_td_name'></td>
+			<td id='cs_td_round'></td>
+			<td id='cs_td_total'></td>
+		</tr>
+	</table>
+	
+	<table class='puzzleboard_ans'></table>
+	
+	<button class='pick_letter' id='pl_1'>A</button>
+	<button class='pick_letter' id='pl_2'>Ă</button>
+	<button class='pick_letter' id='pl_3'>Â</button>
+	<button class='pick_letter' id='pl_4'>B</button>
+	<button class='pick_letter' id='pl_5'>C</button>
+	<button class='pick_letter' id='pl_6'>D</button>
+	<button class='pick_letter' id='pl_7'>Đ</button>
+	<button class='pick_letter' id='pl_8'>E</button>
+	<button class='pick_letter' id='pl_9'>Ê</button>
+	<button class='pick_letter' id='pl_10'>G</button>
+	<button class='pick_letter' id='pl_11'>H</button>
+	<button class='pick_letter' id='pl_12'>I</button>
+	<button class='pick_letter' id='pl_13'>K</button>
+	<button class='pick_letter' id='pl_14'>L</button>
+	<button class='pick_letter' id='pl_15'>M</button>
+	<button class='pick_letter' id='pl_16'>N</button>
+	<button class='pick_letter' id='pl_17'>O</button>
+	<button class='pick_letter' id='pl_18'>Ô</button>
+	<button class='pick_letter' id='pl_19'>Ơ</button>
+	<button class='pick_letter' id='pl_20'>P</button>
+	<button class='pick_letter' id='pl_21'>Q</button>
+	<button class='pick_letter' id='pl_22'>R</button>
+	<button class='pick_letter' id='pl_23'>S</button>
+	<button class='pick_letter' id='pl_24'>T</button>
+	<button class='pick_letter' id='pl_25'>U</button>
+	<button class='pick_letter' id='pl_26'>Ư</button>
+	<button class='pick_letter' id='pl_27'>V</button>
+	<button class='pick_letter' id='pl_28'>X</button>
+	<button class='pick_letter' id='pl_29'>Y</button>
+	<button id='pl_reset'>RESET</button>
+	
+	<textarea class='question_info' id='qi_category' placeholder="Chủ đề"></textarea>
+	<textarea class='question_info' id='qi_ks' placeholder="Ghi chú"></textarea>
+	
+	<textarea class='question_info' id='qi_hint' placeholder="Gợi ý"></textarea>
+	<div class="timer">
+		<p class="timer_text"></p>
+	</div>
+  
+  <script>    
+    document.onkeydown = function(e) {
+        if(e.keyCode == 123) {
+         return false;
+        }
+        if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)){
+         return false;
+        }
+        if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)){
+         return false;
+        }
+        if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)){
+         return false;
+        }
+
+        if(e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)){
+         return false;
+        }      
+     }
+	</script>
+</body>

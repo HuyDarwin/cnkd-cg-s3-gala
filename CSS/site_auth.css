@@ -1,0 +1,77 @@
+body {
+  background-color:black;
+  background-size:cover;
+  background-position:center;
+}
+
+button {
+	cursor: pointer;
+	font-family:"Tahoma";
+	border-width:2%;
+  border-color:white;
+  background-color:black;
+  color:white;
+}
+
+button:hover {
+	background-color:white;
+  color:black;
+	transition: 0.25s;
+}
+
+button:disabled {
+  opacity:0.5;
+}
+
+button:disabled:hover {
+  background-color:black;
+  color:white;
+  transition: 0.25s;
+}
+
+textarea{
+  color:white;
+  background-color:black;
+  resize:none;
+  
+  font-family:"Tahoma";
+  font-size:20px;
+  
+  border: 2px solid white;  
+}
+
+.stage{
+  width:100%;
+  height:100%;
+  top:0px;
+  bottom:0px;
+  left:0px;
+  right:0px;
+  overflow:hidden;
+  z-index:0;
+}
+
+.holder{
+  width:100%;
+  height:100%;
+  top:0px;
+  left:0px;
+  bottom:0px;
+  right:0px;
+}
+
+.passkey-input{
+  width:40%;
+  left:20%;
+  height:10%;
+  top:45%;
+  font-size:48px;
+}
+
+.passkey-submit{
+  width:19%;
+  left:61%;
+  height:10%;
+  top:45%;
+  font-size:48px;
+}

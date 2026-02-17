@@ -1,0 +1,96 @@
+button {
+	background-color:black;
+	color:white;
+	text-align:center;
+	font-family:'FZ Lufga';
+	font-size:5vw;
+	font-weight: bold;
+	border:0.1vw solid white;
+	cursor: pointer;
+}
+
+button:not(:disabled):hover {
+	background-color:white;
+	color:black;
+	transition: 0.25s;
+}
+
+button:disabled {
+	color:gray;
+	border:0.1vw solid gray;
+	cursor:auto;
+}
+
+textarea {
+	resize:none;
+	font-family:'SFU Futura Book';
+	font-size:2.3vw;
+	background-color:black;
+	color:white;
+	border-radius:0;
+}
+
+.background {
+	width:100vw;
+	height:56.25vw;
+	top:0vw;
+	left:0vw;
+	filter: brightness(0.1);
+}
+
+.order {
+	width:3.5vw;
+	height:4vw;
+	left:0.5vw;
+	top:0.5vw;
+	border:0.1vw solid white;
+  text-align:center;
+  font-weight:bold;
+  font-family:'FZ Lufga';
+  font-size:2.5vw;
+}
+
+.who_buzzers {
+	width:68vw;
+	height:4vw;
+	left:4.5vw;
+	top:0.5vw;
+	border:0.1vw solid white;
+}
+
+.preview {
+	width:72vw;
+	height:40.5vw;
+	top:4.75vw;
+	left:0.5vw;
+}
+
+#preview_1 {
+  clip-path:inset(10% 30% 50.25% 30%);
+  transform-origin:top center;
+  transform:scale(2.5);
+  top:-5.25vw;
+}
+
+.prev_wheel {
+	left:73vw;
+	top:0.5vw;
+	width:13vw;
+	height:4vw;
+  font-size:3vw;
+}
+
+.prev_puzzle {
+	left:86.5vw;
+	top:0.5vw;
+	width:13vw;
+	height:4vw;
+  font-size:3vw;
+}
+
+.buzzer {
+	left:73vw;
+	top:4.75vw;
+	width:26.5vw;
+	height:40.5vw;
+}

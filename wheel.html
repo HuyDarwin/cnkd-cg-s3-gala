@@ -1,0 +1,81 @@
+<html>
+<head>
+    <title>Wheel</title>
+	
+	<script type="text/javascript" src="JS/jquery-3.3.1.min.js"></script>
+	<script type="module" src="JS/firebase.js"></script>
+	<script type='module' src='JS/functions.js'></script>	
+	<script type="module" src="JS/sound_fb.js"></script>	
+	<script type="module" src="JS/wheel_fb.js"></script>
+	
+    <link rel="stylesheet" type="text/css" href="CSS/reset.css">
+	<link rel="stylesheet" type="text/css" href="CSS/site.css">
+	<link rel="stylesheet" type="text/css" href="CSS/site_wheel.css">
+
+  <meta http-equiv='cache-control' content='no-cache'> 
+	<meta http-equiv='expires' content='0'> 
+	<meta http-equiv='pragma' content='no-cache'>
+	
+    <meta charset="utf-8" />
+</head>
+<body onkeydown="if(!event.target.matches('input')&&!event.target.matches('textarea')&&event.keyCode != 122 && event.keyCode != 116 && event.keyCode != 17)return!1" oncontextmenu="return!1" onselectstart="return!1" ondragstart="return!1">
+	<div class='wheel_holder'>
+	  <div class='wheel_backdrop'>
+      <!--
+      <video id='wheel_main' src='https://cdn.glitch.global/bf5bd97f-d51e-485d-8828-ce615120e2e0/N%C3%B3n%20kh%C3%B4ng%20kim%20ch%E1%BB%9Bp.mp4?v=1736270310369' autoplay loop></video>
+      <video id='wheel_red' src="https://cdn.glitch.global/bf5bd97f-d51e-485d-8828-ce615120e2e0/2'%20kim%20%C4%91%E1%BB%8F%20fix.mp4?v=1736270308259" autoplay loop></video>
+      <video id='wheel_yellow' src="https://cdn.glitch.global/bf5bd97f-d51e-485d-8828-ce615120e2e0/2'%20kim%20v%C3%A0ng%20fix.mp4?v=1736270310088" autoplay loop></video>
+      <video id='wheel_blue' src="https://cdn.glitch.global/bf5bd97f-d51e-485d-8828-ce615120e2e0/2'%20kim%20xanh%20fix.mp4?v=1736270316134" autoplay loop></video>
+      !-->
+      
+      <div id="wheel_main"><iframe allow="fullscreen;autoplay" allowfullscreen height="100%" src="https://streamable.com/e/fscmi2?autoplay=1&muted=1&nocontrols=1" width="100%" style="border:none; width:100%; height:100%; position:absolute; left:0px; top:0px; overflow:hidden;"></iframe></div>
+      <div id="wheel_red"><iframe allow="fullscreen;autoplay" allowfullscreen height="100%" src="https://streamable.com/e/vf3if1?autoplay=1&muted=1&nocontrols=1" width="100%" style="border:none; width:100%; height:100%; position:absolute; left:0px; top:0px; overflow:hidden;"></iframe></div>
+      <div id="wheel_yellow"><iframe allow="fullscreen;autoplay" allowfullscreen height="100%" src="https://streamable.com/e/n8ebut?autoplay=1&muted=1&nocontrols=1" width="100%" style="border:none; width:100%; height:100%; position:absolute; left:0px; top:0px; overflow:hidden;"></iframe></div>
+      <div id="wheel_blue"><iframe allow="fullscreen;autoplay" allowfullscreen height="100%" src="https://streamable.com/e/5i2oi1?autoplay=1&muted=1&nocontrols=1" width="100%" style="border:none; width:100%; height:100%; position:absolute; left:0px; top:0px; overflow:hidden;"></iframe></div>
+    </div>
+    <div class="wheel_hold">
+      <div class='wheel'>
+        <div class='wheel_wedges_tags' id='wwt_1m'></div>
+        <div class='wheel_wedges_tags' id='wwt_ex'></div>
+        <div class='wheel_wedges_tags' id='wwt_qn'></div>
+        <div class='wheel_wedges_tags' id='wwt_may'></div>
+        <div class='wheel_wedges_tags' id='wwt_mys_1'></div>
+        <div class='wheel_wedges_tags' id='wwt_mys_2'></div>
+        <div class='wheel_wedges_tags' id='wwt_gift'></div>
+        <div class='wheel_wedges_tags' id='wwt_rui'></div>
+        <div class='wheel_wedges_tags' id='wwt_ks'></div>
+        <div class='wheel_wedges_tags' id='wwt_them'></div>
+        <div class='wheel_wedges_tags' id='wwt_wild'></div>
+        <div class='wheel_wedges_tags' id='wwt_half_1'></div>
+        <div class='wheel_wedges_tags' id='wwt_half_2'></div>
+      </div>
+    </div>
+		
+		<div class='kim' id='kim_1'></div>
+		<div class='kim' id='kim_2'></div>
+		<div class='kim' id='kim_3'></div>
+    
+    <div class='kim_hv'></div>
+	</div>
+  
+  <script>    
+    document.onkeydown = function(e) {
+        if(e.keyCode == 123) {
+         return false;
+        }
+        if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)){
+         return false;
+        }
+        if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)){
+         return false;
+        }
+        if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)){
+         return false;
+        }
+
+        if(e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)){
+         return false;
+        }      
+     }
+	</script>
+</body>

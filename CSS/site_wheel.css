@@ -1,0 +1,171 @@
+.wheel_holder {
+	background-position: center;
+	background-size: cover;
+	width:100vw;
+	height:56.25vw;
+	top:0vw;
+	left:0vw;
+}
+
+.wheel_backdrop {
+	background-position: center;
+	background-size: cover;
+	width:100%;
+	height:100%;
+	top:0vw;
+	left:0vw;
+}
+
+#wheel_main {
+	width:100%;
+	height:100%;
+	top:0vw;
+	left:0vw;
+}
+
+#wheel_red {
+	width:100%;
+	height:100%;
+	top:0vw;
+	left:0vw;
+}
+
+#wheel_yellow {
+	width:100%;
+	height:100%;
+	top:0vw;
+	left:0vw;
+}
+
+#wheel_blue {
+	width:100%;
+	height:100%;
+	top:0vw;
+	left:0vw;
+}
+
+.wheel_hold {
+	width:45vw;
+	height:45vw;
+	left:27.5vw;
+	top:10.65vw;
+  transform:scale(0.91);
+}
+
+.wheel {
+	/*background-image: url("https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/n%C3%B3n%20m%E1%BB%9Bi%20cg%201.png?v=1688611206409");*/
+	background-image: url("../Assets/nón%20v1%403x.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	width:100%;
+  height:100%;
+  left:0%;
+  top:0%;
+}
+
+.wheel_wedges_tags {
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	width:45vw;
+	height:45vw;
+	opacity:0;
+}
+
+#wwt_1m {
+	background-image: url("../Assets/nón%20v1%20copy%208.png");
+}
+
+#wwt_ex {
+	background-image: url("../Assets/siêu%20tốc%20new%20(1).png");
+  top:-0.15vw;
+  left:-0.1vw;
+}
+
+#wwt_ks {
+	background-image: url("../Assets/nón%20v1%20copy%2011.png");
+  top:0.05vw;
+  left:0.05vw;
+}
+
+#wwt_may {
+	background-image: url("../Assets/layout%20nón%20s3_nón%20v1%20copy%203.png");
+}
+
+#wwt_mys_1, #wwt_mys_2 {
+	background-image: url("../Assets/nón%20v1%20copy%209.png");
+}
+
+#wwt_gift {
+	background-image: url("../Assets/layout%20nón%20s3_nón%20v1%20copy%205.png");
+}
+
+#wwt_rui {
+	background-image: url("../Assets/layout%20nón%20s3_nón%20v1%20copy%204.png");
+}
+
+#wwt_qn {
+	background-image: url("../Assets/layout%20nón%20s3_nón%20v1%20copy%207.png");
+}
+
+#wwt_them {
+	background-image: url("../Assets/layout%20nón%20s3_nón%20v1%20copy%206.png");
+}
+
+#wwt_wild {
+	background-image: url("../Assets/layout%20nón%20s3_nón%20v1%20copy.png");
+}
+
+#wwt_half_1, #wwt_half_2 {
+	background-image: url("../Assets/nón%20v1%20copy%2012%403x.png");
+}
+
+.kim {
+  opacity:0;
+}
+
+#kim_1 {
+	background: url('../Images/kim_1.png') no-repeat;
+	background-position: center;
+	background-size: cover;
+	width:3.65vw;
+	height:3.9vw;
+	left:36vw;
+	top:14vw;
+}
+
+#kim_2 {
+	background: url('../Images/kim_2.png') no-repeat;
+	background-position: center;
+	background-size: cover;
+	width:2.65vw;
+	height:4.6vw;
+	left:48.675vw;
+	top:9.8vw;
+}
+
+#kim_3 {
+	background: url('../Images/kim_3.png') no-repeat;
+	background-position: center;
+	background-size: cover;
+	width:3.65vw;
+	height:3.9vw;
+	left:60.7vw;
+	top:13.5vw;
+}
+
+.kim_hv {
+  opacity:1;
+	background: url("../Assets/kim.png") no-repeat;
+	background-position: center;
+	background-size: cover;
+	width:100vw;
+	height:56.25vw;
+	top:0vw;
+	left:0vw;
+}
+
+#wheel_red, #wheel_yellow, #wheel_blue {
+  opacity:0;
+}

@@ -1,0 +1,125 @@
+<html>
+<head>
+  <title>Soundboard</title>
+	
+	<script src="https://unpkg.com/xlsx/dist/xlsx.full.min.js"></script>
+	<script type="text/javascript" src="JS/jquery-3.3.1.min.js"></script>
+	<script type="module" src="JS/firebase.js"></script>
+	<script type='module' src='JS/functions.js'></script>	
+	
+  <link rel="stylesheet" type="text/css" href="CSS/reset.css">
+	<link rel="stylesheet" type="text/css" href="CSS/site.css">
+	<link rel="stylesheet" type="text/css" href="CSS/site_controller.css">
+
+	<meta http-equiv='cache-control' content='no-cache'> 
+	<meta http-equiv='expires' content='0'> 
+	<meta http-equiv='pragma' content='no-cache'>
+	
+  <meta charset="utf-8" />
+</head>
+<body onkeydown="if(!event.target.matches('input')&&!event.target.matches('textarea')&&event.keyCode != 122 && event.keyCode != 116 && event.keyCode != 17)return!1" oncontextmenu="return!1" onselectstart="return!1" ondragstart="return!1">
+	<img class='background' src='Images/controller_bg.png' />
+	
+	<iframe class='preview' id='pre_wheel' src='wheel.html' frameborder='0'></iframe>
+	<iframe class='preview' id='pre_puzzleboard' src='puzzleboard.html' frameborder='0'></iframe>
+  <div class='button_holder' id='bh_wheel'>
+		<button name='autocmd' id='reload'>RELOAD</button>
+		<button name='autocmd' id='reload_host'>RELOAD HOST WEB</button>
+	</div>
+	<div class='button_holder' id='bh_sounds'>
+		<button name='autocmd' id='sound_intro'>INTRO</button>
+		<button name='autocmd' id='sound_he'>HOST ENTRANCE</button>
+		<button name='autocmd' id='sound_theme'>THEME</button>
+		<button name='autocmd' id='sound_bg_1'>1</button>
+		<button name='autocmd' id='sound_bg_2'>2</button>
+		<button name='autocmd' id='sound_bg_3'>3</button>
+		<button name='autocmd' id='sound_bg_4'>4</button>
+		<button name='autocmd' id='sound_bg_5'>5</button>
+		<button name='autocmd' id='sound_bg_6'>6</button>
+		<button name='autocmd' id='sound_bg_7'>7</button>
+		<button name='autocmd' id='sound_bg_8'>8</button>
+		<button name='autocmd' id='sound_bg_9'>9</button>
+		<button name='autocmd' id='sound_bg_10'>10</button>
+		<button name='autocmd' id='sound_bg_11'>11</button>
+		<button name='autocmd' id='sound_bg_12'>12</button>
+		<button name='autocmd' id='sound_bg_13'>13</button>
+		<button name='autocmd' id='sound_wrong'>WRONG</button>
+		<button name='autocmd' id='sound_double_buzzer'>DOUBLE BUZZER</button>
+		<button name='autocmd' id='sound_br'>MẤT ĐIỂM</button>
+		<button name='autocmd' id='sound_ml'>MẤT LƯỢT</button>
+		<button name='autocmd' id='sound_1m'>1 TRIỆU CG</button>
+		<button name='autocmd' id='sound_ch'>CƠ HỘI</button>
+		<button name='autocmd' id='sound_mm'>MAY MẮN</button>
+		<button name='autocmd' id='sound_mr'>MAY RỦI</button>
+		<button name='autocmd' id='sound_pt'>PHẦN THƯỞNG</button>
+		<button name='autocmd' id='sound_tl'>THÊM LƯỢT</button>
+		<button name='autocmd' id='sound_half'>1/2 CG</button>
+		<button name='autocmd' id='sound_jack'>ĐỘC ĐẮC</button>
+		<button name='autocmd' id='sound_mys'>Ô BÍ MẬT</button>
+		<button name='autocmd' id='sound_st'>SIÊU TỐC</button>
+		<button name='autocmd' id='sound_dd'>ĐỔI ĐIỂM</button>
+		<button name='autocmd' id='sound_ex_bg'>NHẠC NỀN SIÊU TỐC</button>
+		<button name='autocmd' id='sound_br_spin'>BR SPIN</button>
+		<button name='autocmd' id='sound_br_trans'>BR TRANSITION</button>
+		<button name='autocmd' id='sound_br_rstlne'>BR RSTLNE</button>
+		<button name='autocmd' id='sound_br_3c1v'>BR 3C1V</button>
+		<button name='autocmd' id='sound_br_10s_think'>BR 10S THINK</button>
+		<button name='autocmd' id='sound_br_10s'>BR 10S</button>
+		<button name='autocmd' id='sound_br_win'>BR WIN</button>
+		<button name='autocmd' id='sound_br_1m_win'>BR 1M WIN</button>
+		<button name='autocmd' id='sound_br_lose'>BR LOSE</button>
+		<button name='autocmd' id='sound_cus_1'>*</button>
+		<button name='autocmd' id='sound_cus_2'>*</button>
+		<button name='autocmd' id='sound_cus_3'>*</button>
+		<button name='autocmd' id='sound_cus_4'>*</button>
+		<button name='autocmd' id='sound_cus_5'>*</button>
+		<button name='autocmd' id='sound_cus_6'>*</button>
+		<button name='autocmd' id='sound_cus_7'>*</button>
+		<button name='autocmd' id='sound_cus_8'>*</button>
+		<button name='autocmd' id='sound_cus_9'>*</button>
+		<button name='autocmd' id='sound_cus_10'>*</button>
+		<button name='autocmd' id='sound_cus_11'>*</button>
+		<button name='autocmd' id='sound_cus_12'>*</button>
+		<button name='autocmd' id='sound_cus_13'>*</button>
+		<button name='autocmd' id='sound_cus_14'>*</button>
+		<button name='autocmd' id='sound_cus_15'>10</button>
+		<button name='autocmd' id='sound_cus_16'>60</button>
+		<button name='autocmd' id='sound_cus_17'>CNV</button>
+		<button name='autocmd' id='sound_cus_18'>30</button>
+		<button name='autocmd' id='sound_cus_19'>VCNV</button>
+		<button name='autocmd' id='sound_stop'>STOP ALL SOUNDS</button>
+	</div>
+	<script>
+		var round = '';
+		
+		var category = '';
+		var hint = '';
+		
+		var letters = [];
+		
+		var tossup_boolean = false;
+		
+		var tossup_int = '';
+	</script>
+  
+  <script>    
+    document.onkeydown = function(e) {
+        if(e.keyCode == 123) {
+         return false;
+        }
+        if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)){
+         return false;
+        }
+        if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)){
+         return false;
+        }
+        if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)){
+         return false;
+        }
+
+        if(e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)){
+         return false;
+        }      
+     }
+	</script>
+</body>

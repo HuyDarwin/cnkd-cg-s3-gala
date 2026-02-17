@@ -1,0 +1,730 @@
+button {
+	background-color: black;
+	color: white;
+	text-align: center;
+	font-family: 'FZ Lufga';
+	font-size: 1.5vw;
+	font-weight: bold;
+	border: 0.1vw solid white;
+	cursor: pointer;
+}
+
+button:not(:disabled):hover {
+	background-color: white;
+	color: black;
+	transition: 0.25s;
+}
+
+button:disabled {
+	color: gray;
+	border: 0.1vw solid gray;
+	cursor: auto;
+}
+
+textarea {
+	resize: none;
+	font-family: 'FZ Lufga';
+	font-size: 1.5vw;
+	background-color: black;
+	color: white;
+	border-radius: 0;
+}
+
+.background {
+	width: 100vw;
+	height: 56.25vw;
+	top: 0vw;
+	left: 0vw;
+	filter: brightness(0.1);
+}
+
+.preview {
+	width: 32vw;
+	height: 18vw;
+	top: 0.5vw;
+	border: 0.1vw solid white;
+}
+
+#pre_wheel {
+	left: 0.5vw;
+}
+
+#pre_puzzleboard {
+	left: 33vw;
+}
+
+#bh_wheel {
+	width: 32.15vw;
+	height: 26.5vw;
+	top: 19vw;
+	left: 0.5vw;
+}
+
+#cwb_red {
+	left: 5.25vw;
+}
+
+#cwb_yellow {
+	left: 8.15vw;
+}
+
+#cwb_blue {
+	left: 12.75vw;
+}
+
+.change_wheel {
+	top: 2.3vw;
+}
+
+#cw_v2 {
+	left: 5.75vw;
+}
+
+#cw_v3 {
+	left: 13vw;
+}
+
+#cw_v4 {
+	left: 19vw;
+}
+
+#spin {
+	top: 4.6vw;
+	width: 16vw;
+	left: 0vw;
+}
+
+#fspin {
+	top: 4.6vw;
+	width: 16vw;
+	left: 16.15vw;
+}
+
+.add_wedge_tag_holder {
+	top: 6.9vw;
+	width: 32.15vw;
+	height: 6.9vw;
+}
+
+.add_wedge_tag_holder button {
+	position: static;
+	margin-bottom: 0.1vw;
+}
+
+.question_info_text {
+	font-family: 'FZ Lufga';
+	font-size: 1.75vw;
+	font-weight: bold;
+	color: white;
+	text-align: center;
+}
+
+#qit_category {
+	top: 15.8vw;
+	height: 2.25vw;
+	line-height: 2.25vw;
+}
+
+#qit_hint {
+	top: 18.3vw;
+	height: 5vw;
+	line-height: 5vw;
+}
+
+.question_info {
+	font-family: 'SFU Futura Book';
+	font-size: 1.3vw;
+	border: 0.1vw solid white;
+	left: 9.5vw;
+	width: 22.5vw;
+}
+
+#qi_category {
+	top: 15.8vw;
+	height: 2.25vw;
+}
+
+#qi_hint {
+	top: 18.3vw;
+	height: 5vw;
+}
+
+#reload {
+	top: 24.3vw;
+}
+
+#reload_host {
+	top: 24.3vw;
+	left: 6.5vw;
+}
+
+#edit_passkey {
+	top: 26.6vw;
+}
+
+#reload_auth {
+	top: 26.6vw;
+	left: 15vw;
+}
+
+#bh_puzzleboard {
+	width: 32.15vw;
+	height: 26.5vw;
+	top: 19vw;
+	left: 33vw;
+}
+
+.select_round_holder {
+	top: 0vw;
+	width: 32.15vw;
+	height: 6.9vw;
+}
+
+.select_round_holder button {
+	position: static;
+	margin-bottom: 0.1vw;
+}
+
+.open_letter {
+	width: 2.15vw;
+	height: 2.05vw;
+}
+
+#ol_1,
+#ol_2,
+#ol_3,
+#ol_4,
+#ol_5,
+#ol_6,
+#ol_7,
+#ol_8,
+#ol_9,
+#ol_10,
+#ol_11,
+#ol_12,
+#ol_13,
+#ol_14 {
+	top: 9.2vw;
+}
+
+#ol_15,
+#ol_16,
+#ol_17,
+#ol_18,
+#ol_19,
+#ol_20,
+#ol_21,
+#ol_22,
+#ol_23,
+#ol_24,
+#ol_25,
+#ol_26,
+#ol_27,
+#ol_28 {
+	top: 11.5vw;
+}
+
+#ol_29,
+#ol_30,
+#ol_31,
+#ol_32,
+#ol_33,
+#ol_34,
+#ol_35,
+#ol_36,
+#ol_37,
+#ol_38,
+#ol_39,
+#ol_40,
+#ol_41,
+#ol_42 {
+	top: 13.8vw;
+}
+
+#ol_43,
+#ol_44,
+#ol_45,
+#ol_46,
+#ol_47,
+#ol_48,
+#ol_49,
+#ol_50,
+#ol_51,
+#ol_52,
+#ol_53,
+#ol_54,
+#ol_55,
+#ol_56 {
+	top: 16.1vw;
+}
+
+#ol_2,
+#ol_16,
+#ol_30,
+#ol_44 {
+	left: 2.3vw;
+}
+
+#ol_3,
+#ol_17,
+#ol_31,
+#ol_45 {
+	left: 4.6vw;
+}
+
+#ol_4,
+#ol_18,
+#ol_32,
+#ol_46 {
+	left: 6.9vw;
+}
+
+#ol_5,
+#ol_19,
+#ol_33,
+#ol_47 {
+	left: 9.2vw;
+}
+
+#ol_6,
+#ol_20,
+#ol_34,
+#ol_48 {
+	left: 11.5vw;
+}
+
+#ol_7,
+#ol_21,
+#ol_35,
+#ol_49 {
+	left: 13.8vw;
+}
+
+#ol_8,
+#ol_22,
+#ol_36,
+#ol_50 {
+	left: 16.1vw;
+}
+
+#ol_9,
+#ol_23,
+#ol_37,
+#ol_51 {
+	left: 18.4vw;
+}
+
+#ol_10,
+#ol_24,
+#ol_38,
+#ol_52 {
+	left: 20.7vw;
+}
+
+#ol_11,
+#ol_25,
+#ol_39,
+#ol_53 {
+	left: 23vw;
+}
+
+#ol_12,
+#ol_26,
+#ol_40,
+#ol_54 {
+	left: 25.3vw;
+}
+
+#ol_13,
+#ol_27,
+#ol_41,
+#ol_55 {
+	left: 27.6vw;
+}
+
+#ol_14,
+#ol_28,
+#ol_42,
+#ol_56 {
+	left: 29.9vw;
+}
+
+#puzzle_reveal {
+	top: 18.4vw;
+}
+
+#puzzle_solve {
+	top: 18.4vw;
+	left: 8.6vw;
+}
+
+#puzzle_giaima {
+	top: 18.4vw;
+	left: 16.8vw;
+}
+
+#puzzle_fs {
+	top: 18.4vw;
+	left: 25.2vw;
+}
+
+#tossup_buzzer {
+	top: 20.7vw;
+}
+
+#tossup_continue {
+	top: 20.7vw;
+	left: 13.5vw;
+}
+
+#reveal_backdrop {
+	top: 23vw;
+}
+
+#hide_backdrop {
+	top: 23vw;
+	left: 12.5vw;
+}
+
+#puzzle_back_1 {
+	top: 25.5vw;
+	width: 5vw;
+}
+
+#puzzle_back_2 {
+	top: 25.5vw;
+	left: 5.25vw;
+	width: 5.5vw;
+}
+
+#puzzle_back_3 {
+	top: 25.5vw;
+	left: 11vw;
+	width: 9vw;
+}
+
+#bh_sounds {
+	width: 33.6vw;
+	height: 23.5vw;
+	top: 0.5vw;
+	left: 65.65vw;
+}
+
+#bh_sounds button {
+	position: static;
+	margin-bottom: 0.1vw;
+}
+
+.buzzer_player {
+	font-family: 'SFU Futura Book';
+	font-size: 1.3vw;
+	border: 0.1vw solid white;
+	left: 0vw;
+	width: 30vw;
+	top: 20.3vw;
+	height: 2.5vw;
+	line-height: 2.25vw;
+}
+
+.timer_text {
+	font-family: 'Fz Lufga';
+	font-size: 1.75vw;
+	font-weight: bold;
+	border: 0.1vw solid white;
+	left: 30.25vw;
+	width: 2.5vw;
+	top: 20.3vw;
+	height: 2.5vw;
+	text-align: center;
+}
+
+.contestants_score {
+	width: 34vw;
+	height: 20vw;
+	top: 24vw;
+	left: 65.5vw;
+}
+
+.cont_text {
+	font-family: 'FZ Lufga';
+	font-size: 1.75vw;
+	font-weight: bold;
+	color: white;
+	height: 2.25vw;
+	line-height: 2.25vw;
+	text-align: center;
+}
+
+#ct_name {
+	width: 15vw;
+}
+
+#ct_input,
+#ct_round,
+#ct_total {
+	width: 5.75vw;
+}
+
+#ct_input {
+	left: 15.5vw;
+}
+
+#ct_round {
+	left: 21.75vw;
+}
+
+#ct_total {
+	left: 28vw;
+}
+
+.contestant_allow_buzzer {
+	width: 1.25vw;
+	height: 2.5vw;
+	font-family: 'SFU Futura Book';
+	font-size: 1vw;
+}
+
+.contestant_name {
+	width: 13.5vw;
+	height: 2.5vw;
+	font-family: 'SFU Futura Book';
+	font-size: 1.4vw;
+	left:1.5vw;
+}
+
+.contestant_score_input,
+.contestant_score_round,
+.contestant_score_total {
+	width: 5.75vw;
+	height: 2.5vw;
+}
+
+.contestant_score_input {
+	left: 15.5vw;
+	font-family: 'SFU Futura Book';
+	font-size: 1.4vw;
+}
+
+.contestant_score_round {
+	left: 21.75vw;
+	color: black;
+	background-color: white;
+	font-weight: bold;
+}
+
+.contestant_score_total {
+	left: 28vw;
+	color: black;
+	background-color: white;
+	font-weight: bold;
+}
+
+#cab_1,
+#cn_1,
+#csi_1,
+#csr_1,
+#cst_1 {
+	top: 2.5vw;
+}
+
+#cab_2,
+#cn_2,
+#csi_2,
+#csr_2,
+#cst_2 {
+	top: 5.25vw;
+}
+
+#cab_3,
+#cn_3,
+#csi_3,
+#csr_3,
+#cst_3 {
+	top: 8vw;
+}
+
+#update_names {
+	top: 10.75vw;
+	width: 15vw;
+}
+
+.ket_sat_property {
+	top: 13vw;
+	width: 21.25vw;
+	height: 6.8vw;
+	font-family: 'SFU Futura Book';
+	font-size: 1.4vw;
+}
+
+.update_input_score,
+.update_round_score,
+.update_total_score {
+	width: 5.75vw;
+}
+
+.update_input_score {
+	left: 15.5vw;
+}
+
+.update_round_score {
+	left: 21.75vw;
+}
+
+.update_total_score {
+	left: 28vw;
+}
+
+#reset_input,
+#add_to_round,
+#add_to_total {
+	top: 10.75vw;
+}
+
+#subtract_from_round,
+#subtract_from_total {
+	top: 13.05vw;
+}
+
+#replace_round,
+#replace_total {
+	top: 15.35vw;
+}
+
+#reset_round,
+#reset_total {
+	top: 17.65vw;
+}
+
+/* popup */
+
+.popup {
+	width: 100%;
+	height: 100%;
+	top: 1920px;
+	left: 0%;
+	border-inline: 2px solid white;
+	background-color: black;
+	z-index: 1;
+}
+
+.popup-title {
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100px;
+
+	font-family: "Tahoma";
+	font-size: 48px;
+	line-height: 100px;
+	text-align: left;
+	padding-left: 25px;
+
+	background-color: white;
+}
+
+.popup-close {
+	top: 5px;
+	right: 5px;
+	width: 90px;
+	height: 90px;
+
+	font-family: "Tahoma";
+	font-size: 48px;
+	text-align: center;
+}
+
+/* popup passkey */
+.popup-passkey-player {
+	width: 39%;
+	height: 15%;
+}
+
+.ppp-input {
+	width: 69%;
+	height: 49%;
+	left: 0%;
+	top: 0%;
+	font-size: 48px;
+}
+
+.ppp-submit {
+	width: 29%;
+	height: 49%;
+	left: 70%;
+	top: 0%;
+	font-size: 36px;
+}
+
+.ppp-pass {
+	width: 69%;
+	height: 49%;
+	left: 0%;
+	top: 50%;
+}
+
+.ppp-pass svg {
+	width: 100%;
+	height: 100%;
+	left: 0%;
+	top: 0%
+}
+
+.ppp-pass svg text {
+	font-family: "Tahoma";
+	font-size: 48px;
+	font-weight: bold;
+	fill: white;
+	transform: translateY(75%);
+}
+
+.ppp-random {
+	width: 29%;
+	height: 49%;
+	left: 70%;
+	top: 50%;
+	font-size: 36px;
+}
+
+#ppp_player_1 {
+	top: 10%;
+	left: 0.5%;
+}
+
+#ppp_player_2 {
+	top: 26%;
+	left: 0.5%;
+}
+
+#ppp_player_3 {
+	top: 42%;
+	left: 0.5%;
+}
+
+#ppp_player_4 {
+	top: 10%;
+	left: 40%;
+}
+
+#ppp_player_5 {
+	top: 26%;
+	left: 40%;
+}
+
+#ppp_player_6 {
+	top: 42%;
+	left: 40%;
+}
+
+#ppp_host {
+	top: 58%;
+	left: 0.5%;
+}
+
+
+.popup-passkey-copy {
+	left: 79%;
+	top: 10%;
+	width: 20%;
+	height: 90%;
+	font-size: 36px;
+}

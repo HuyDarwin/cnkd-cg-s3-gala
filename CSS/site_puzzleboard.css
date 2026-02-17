@@ -1,0 +1,194 @@
+.puzzleboard_holder {
+	background-position: center;
+	background-size: cover;
+	width: 100vw;
+	height: 56.25vw;
+	top: 0vw;
+	left: 0vw;
+}
+
+.puzzleboard_backdrop {
+	background-position: center;
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+	top: 0vw;
+	left: 0vw;
+}
+
+.puzzleboard_backdrop video {
+	opacity: 0;
+}
+
+#puzzle_frame_main {
+	background: url("../Assets/khung%20tứ%20kết_.png") no-repeat;
+	background-position: center;
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+	top: 0vw;
+	left: 0vw;
+}
+
+#puzzle_frame_bonus {
+	background: url("../Assets/khung%20tứ%20kết%20vòng%20đặc%20biệt.png") no-repeat;
+	background-position: center;
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+	top: 0vw;
+	left: 0vw;
+	opacity: 0;
+}
+
+#puzzle_back_main {
+	background: url("../Assets/2ca5df5e-27d0-4c9d-b991-d8725e890f6f.jpg") no-repeat;
+	background-position: center;
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+	top: 0vw;
+	left: 0vw;
+}
+
+#puzzle_back_bonus {
+	background: url("../Assets/e52e609f-05a8-4316-aa15-55cbfa542208.jpg") no-repeat;
+	background-position: center;
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+	top: 0vw;
+	left: 0vw;
+	opacity: 0;
+}
+
+#puzzle_bonus_buzzer {
+	background: url("../Assets/EP30 ONLY/Ấn chuông Vòng đặc biệt.png") no-repeat;
+	background-position: center;
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+	top: 0vw;
+	left: 0vw;
+	opacity: 0;
+}
+
+#puzzle_bonus_correct {
+	background: url("../Assets/EP30 ONLY/Trả lời đúng Vòng đặc biệt.png") no-repeat;
+	background-position: center;
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+	top: 0vw;
+	left: 0vw;
+	opacity: 0;
+}
+
+.puzzleboard, .puzzleboard_empty {
+	width: 84.7vw;
+	height: 28.7vw;
+	top: 12.8vw;
+	left: 7.65vw;
+}
+
+.letter {
+	/*background-image: url(https://cdn.glitch.global/bf5bd97f-d51e-485d-8828-ce615120e2e0/o%20chu%20xanh%20luc.jpg?v=1736265520207");*/
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	color: black;
+	text-align: center;
+	font-family: 'Neue Helvetica Condensed 87 Heavy';
+	font-size: 5.2vw;
+	border-width: 0.22vw;
+	border-style: solid;
+	border-color: transparent;
+	border-collapse: collapse;
+	width: 4.8vw;
+	height: 6.4vw;
+}
+
+.letter div {
+	width: 5.6vw;
+	line-height: 7.6vw;
+}
+
+#letter_1,
+#letter_14,
+#letter_43,
+#letter_56 {
+	background-image: none;
+}
+
+.letter_empty {
+	background-image: url("../Assets/o_chu_xanh_luc.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	color: black;
+	text-align: center;
+	font-family: 'Neue Helvetica Condensed 87 Heavy';
+	font-size: 5.2vw;
+	border-width: 0.22vw;
+	border-style: solid;
+	border-color: transparent;
+	border-collapse: collapse;
+	width: 4.8vw;
+	height: 6.4vw;
+}
+
+.letter_empty div {
+	width: 5.6vw;
+	line-height: 7.6vw;
+}
+
+#letter_empty_1,
+#letter_empty_14,
+#letter_empty_43,
+#letter_empty_56 {
+	background-image: none;
+}
+
+.camera_source {
+	width: 100%;
+	height: 100%;
+	top: 0%;
+	left: 0%;
+	opacity: 0;
+}
+
+.camera_source:fullscreen {
+	max-width: none;
+	width: 100%;
+}
+
+.camera_source:-webkit-full-screen {
+	max-width: none;
+	width: 100%;
+}
+
+.camera_source video {
+	width: 100%;
+}
+
+.backdrop {
+	/* background: url('https://cdn.glitch.global/a7d5a62e-3fb6-4d15-a49b-bbf78da026bd/447843344_851099847035300_6053132700727479077_n.jpg?v=1718195100962') no-repeat; */
+	background-position: center;
+	background-size: cover;
+	width: 100vw;
+	height: 56.25vw;
+	top: 0vw;
+	left: 0vw;
+	opacity: 0;
+}
+
+.temporary {
+	color: black;
+	text-align: center;
+	font-family: 'Neue Helvetica Condensed 87 Heavy';
+	font-size: 5.2vw;
+	width: 4.8vw;
+	height: 6.4vw;
+	top:100vw;
+	left:0vw;
+}

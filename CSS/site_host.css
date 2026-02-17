@@ -1,0 +1,294 @@
+button {
+	background-color: black;
+	color: white;
+	text-align: center;
+	font-family: 'FZ Lufga';
+	font-size: 2vw;
+	font-weight: bold;
+	border: 0.1vw solid white;
+	cursor: pointer;
+}
+
+button:not(:disabled):hover {
+	background-color: white;
+	color: black;
+	transition: 0.25s;
+}
+
+button:disabled {
+	color: gray;
+	border: 0.1vw solid gray;
+	cursor: auto;
+}
+
+textarea {
+	resize: none;
+	font-family: 'FZ Lufga';
+	font-size: 2.5vw;
+	background-color: black;
+	color: white;
+	border-radius: 0;
+}
+
+.background {
+	width: 100vw;
+	height: 56.25vw;
+	top: 0vw;
+	left: 0vw;
+	filter: brightness(0.1);
+}
+
+.prev_wheel {
+	width: 19.5vw;
+	height: 3.75vw;
+	left: 0.5vw;
+	top: 0.5vw;
+	font-size: 3vw;
+}
+
+.prev_puzzle {
+	width: 19.5vw;
+	height: 3.75vw;
+	left: 20.25vw;
+	top: 0.5vw;
+	font-size: 3vw;
+}
+
+.preview {
+	width: 39vw;
+	height: 22vw;
+	left: 0.5vw;
+	top: 4.5vw;
+	border: 0.1vw solid white;
+	opacity: 0;
+}
+
+#pre_wheel {
+	clip-path: inset(10% 30% 50.25% 30%);
+	transform-origin: top center;
+	transform: scale(2.5);
+	top: -1vw;
+}
+
+.contestants_score {
+	width: 59.5vw;
+	height: 10vw;
+	top: 0.5vw;
+	left: 40vw;
+	font-family: 'SFU Futura Book';
+	font-size: 1.4vw;
+	border-collapse: collapse;
+	vertical-align: middle;
+}
+
+.contestants_score tr {
+	height: 2.5vw;
+	vertical-align: middle;
+}
+
+.contestants_score th {
+	color: black;
+	background-color: white;
+	border: 0.1vw solid black;
+	vertical-align: middle;
+	font-family: 'FZ Lufga';
+	font-weight: bold;
+}
+
+#cs_th_name {
+	width: 29.5vw;
+}
+
+#cs_th_round,
+#cs_th_total {
+	width: 10vw;
+}
+
+.contestants_score td {
+	color: white;
+	background-color: black;
+	border: 0.1vw solid white;
+}
+
+.puzzleboard_ans {
+	width: 59.5vw;
+	height: 20vw;
+	top: 11vw;
+	left: 40vw;
+	font-family: 'FZ Lufga';
+	text-align: center;
+	font-size: 3.8vw;
+	border-collapse: collapse;
+	background-color: black;
+	color: white;
+}
+
+.puzzleboard_ans tr {
+	height: 5vw;
+}
+
+.letter {
+	width: 3.71875vw;
+	height: 5vw;
+	border: 0.1vw solid white;
+}
+
+.letter div {
+	width: 3.71875vw;
+	line-height: 5vw;
+}
+
+.pick_letter {
+	width: 3.275vw;
+	height: 3.275vw;
+}
+
+#pl_1,
+#pl_2,
+#pl_3,
+#pl_4,
+#pl_5,
+#pl_6,
+#pl_7,
+#pl_8 {
+	top: 31.5vw;
+}
+
+#pl_9,
+#pl_10,
+#pl_11,
+#pl_12,
+#pl_13,
+#pl_14,
+#pl_15,
+#pl_16 {
+	top: 34.975vw;
+}
+
+#pl_17,
+#pl_18,
+#pl_19,
+#pl_20,
+#pl_21,
+#pl_22,
+#pl_23,
+#pl_24 {
+	top: 38.45vw;
+}
+
+#pl_25,
+#pl_26,
+#pl_27,
+#pl_28,
+#pl_29 {
+	top: 41.925vw;
+}
+
+#pl_1,
+#pl_9,
+#pl_17,
+#pl_25 {
+	left: 71.9vw;
+}
+
+#pl_2,
+#pl_10,
+#pl_18,
+#pl_26 {
+	left: 75.375vw;
+}
+
+#pl_3,
+#pl_11,
+#pl_19,
+#pl_27 {
+	left: 78.85vw;
+}
+
+#pl_4,
+#pl_12,
+#pl_20,
+#pl_28 {
+	left: 82.325vw;
+}
+
+#pl_5,
+#pl_13,
+#pl_21,
+#pl_29 {
+	left: 85.8vw;
+}
+
+#pl_6,
+#pl_14,
+#pl_22 {
+	left: 89.275vw;
+}
+
+#pl_7,
+#pl_15,
+#pl_23 {
+	left: 92.75vw;
+}
+
+#pl_8,
+#pl_16,
+#pl_24 {
+	left: 96.225vw;
+}
+
+#pl_reset {
+	width: 10.225vw;
+	height: 3.275vw;
+	left: 89.275vw;
+	top: 41.925vw;
+}
+
+.question_info {
+	font-family: 'SFU Futura Book';
+	font-size: 1.6vw;
+	border: 0.1vw solid white;
+}
+
+#qi_category {
+	left: 40vw;
+	height: 5vw;
+	top: 31.25vw;
+	width: 31.25vw;
+}
+
+#qi_ks {
+	left: 40vw;
+	height: 8.75vw;
+	top: 36.5vw;
+	width: 31.25vw;
+}
+
+#qi_hint {
+	left: 0.5vw;
+	height: 18.25vw;
+	top: 27vw;
+	width: 34.75vw;
+}
+
+.timer {
+	left: 35.5vw;
+	height: 4vw;
+	top: 27vw;
+	width: 4vw;
+	background-color:black;
+	border: 0.1vw solid white;
+}
+
+.timer_text {
+	width: 100%;
+	height:100%;
+	top:0%;
+	left:0%;
+	font-family: 'Fz Lufga';
+	font-size: 3.5vw;
+	font-weight: bold;
+	color:white;
+	line-height:100%;
+	text-align:center;
+}
