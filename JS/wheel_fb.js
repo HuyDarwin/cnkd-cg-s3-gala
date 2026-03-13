@@ -81,7 +81,7 @@ $(function () {
 				update(ref(db, 'commands'), { cw_v2: 0 })
 			}
 			if (data.cw_v3 == 1) {
-				$('.wheel').css('background-image', 'url("Assets/nón%20v2%403x.png")');
+				$('.wheel').css('background-image', 'url("Assets/nón v3@3x.png")');
 				update(ref(db, 'commands'), { cw_v3: 0 })
 			}
 			if (data.cw_v4 == 1) {
