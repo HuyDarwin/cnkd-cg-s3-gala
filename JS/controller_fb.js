@@ -26,7 +26,7 @@ $(function () {
 		remove(ref(db, "commands"));
 
 		update(ref(db, 'variables'), {
-			spinning_miliseconds: 7500,
+			spinning_miliseconds: 8500,
 			spinning_fspin_miliseconds: 5000,
 			//spinning_miliseconds: 10000,
 			spinning_rotating_degree: 0,

@@ -235,7 +235,7 @@ $(function () {
 
 			if (data.spin == 1) {
 				//con.PlaySound("Assets/Wheel%20Spin%20Edit%202%20(With%20Spin%20SFX).mp3", 1);
-				con.PlaySound("Assets/CNKD%20CG%20S3%20Wheel%20Spin%20Final.mp3", 1);
+				con.PlaySound("Assets/Wheel Spinning Bed 2012 short 2.mp3", 1);
 				update(ref(db, 'commands'), { spin: 0 });
 			}
 			if (data.fspin == 1) {
