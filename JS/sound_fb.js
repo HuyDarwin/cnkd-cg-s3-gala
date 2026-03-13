@@ -350,6 +350,10 @@ $(function () {
               con.PlaySound("Assets/y2mate.com - Background Suspense Music  Suspenseful  Dramatic Film Soundtracks ANTICIPATION.mp3", 5)
 				update(ref(db, 'commands'), { sound_cus_8: 0 });
             }
+            if(data.sound_cus_9 == 1){
+              con.PlaySound("Assets/Hoang Mang Style 1 năm kinh tế buồn.mp3", 2)
+				update(ref(db, 'commands'), { sound_cus_9: 0 });
+            }
 
 			if (data.sound_stop == 1) {
 				con.StopAllSounds();
