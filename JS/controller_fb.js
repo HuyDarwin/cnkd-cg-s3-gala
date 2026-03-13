@@ -292,7 +292,7 @@ $(function () {
 					for (var i = 1; i <= 4; i++) {
 						var d;
 						var e;
-						var f;
+						var f;1
 
 						if (round == 'tossup_1') {
 							d = sheet[String.fromCharCode(j) + (i + 7)].v;
@@ -684,15 +684,17 @@ $(function () {
 						$('#ol_' + i).removeAttr('disabled');
 					}
 				}
-				for (var mp = 2; mp <= 5; mp++) {	
-					if (bonus_letters[mp - 1][i - 1].letter_existence == true) {
-						if (bonus_letters[mp - 1][i - 1].no_tonemark == '$') {
-							bonus_letters[mp - 1][i - 1].status = 5;
-							update(ref(db, 'variables/letters/status'), { ['br_letter_' + mp + '_' + i]: 5 })
-						}
-						else {
-							bonus_letters[mp - 1][i - 1].status = 1;
-							update(ref(db, 'variables/letters/status'), { ['br_letter_' + mp + '_' + i]: 1 })
+				if (round == 'bonus_round') { 
+					for (var mp = 2; mp <= 5; mp++) {	
+						if (bonus_letters[mp - 1][i - 1].letter_existence == true) {
+							if (bonus_letters[mp - 1][i - 1].no_tonemark == '$') {
+								bonus_letters[mp - 1][i - 1].status = 5;
+								update(ref(db, 'variables/letters/status'), { ['br_letter_' + mp + '_' + i]: 5 })
+							}
+							else {
+								bonus_letters[mp - 1][i - 1].status = 1;
+								update(ref(db, 'variables/letters/status'), { ['br_letter_' + mp + '_' + i]: 1 })
+							}
 						}
 					}
 				}
